@@ -25,24 +25,3 @@ project/plugins/project/
 .idea/
 *.iml
 
-/build_agent
-infra/build_agent/ansible/roles
-infra/app_server/ansible/roles
-infra/memcached_server/ansible/roles
-infra/app_server/*app_server
-infra/wiremock_server/ansible/roles
-infra/wiremock_server/*wiremock_server
-infra/jmeter_server/ansible/roles
-infra/jmeter_server/*jmeter_server
-infra/haproxy_server/ansible/roles
-infra/haproxy_server/*proxy_server
-infra/haproxy_server/packer/*.log
-openrc.sh
-*.tfstate
-*.tfstate.backup
-infra/terraform/staging
-infra/memcached_server/*_memcached_server
-infra/terraform/*tfvars
-infra/concourse/fly
-infra/concourse/*-credentials.yml
-infra/concourse/set-pipeline.sh

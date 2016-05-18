@@ -1,8 +1,4 @@
-name := "totes"
-organization := "com.comcast"
 
-resolvers += "Comcast Nexus" at "https://nexus.comcast.com/nexus/content/groups/public"
-resolvers += "Papi Nexus" at "https://nexus.comcast.com/nexus/content/repositories/papi"
 resolvers += "spray" at "http://repo.spray.io/"
 resolvers += "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases"
 resolvers += "Softprops Maven" at "http://dl.bintray.com/content/softprops/maven"
@@ -30,7 +26,6 @@ libraryDependencies ++= {
     "io.spray"                  %%  "spray-routing"               % sprayV,
     "io.spray"                  %%  "spray-json"                  % "1.2.6",
     "io.spray"                  %%  "spray-client"                % sprayV,
-    "com.iheartradio.m3u8"      %   "open-m3u8"                   % "0.2.3-cim",
     "com.netaporter"            %% "pre-canned"                   % "0.0.6" % "test",
     "com.typesafe.akka"         %%  "akka-actor"                  % akkaV,
     "com.typesafe.akka"         %%  "akka-stream-experimental"    % "2.0.3",
@@ -48,14 +43,13 @@ libraryDependencies ++= {
     "org.json4s"                %%  "json4s-ext"                  % "3.2.11",
     "org.scalaz"                %%  "scalaz-core"                 % "7.1.3",
     "com.bionicspirit"          %%  "shade"                       % "1.7.2",
-    "com.stormlantern"          %% "reactive-consul-client"       % "0.1.2-cim",
-    "org.scala-lang.modules"    %%  "scala-pickling"              % "0.10.1",
-    "org.caoilte"               %%  "spray-routils"               % "0.3.3-cim"
+    "org.scala-lang.modules"    %%  "scala-pickling"              % "0.10.1"
+
   )
 }
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 
-mainClass in (Compile,run) := Some("com.comcast.totes.Boot")
+
 
